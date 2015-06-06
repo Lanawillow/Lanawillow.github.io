@@ -1,0 +1,150 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  }
+  
+/*telling it what fonts to use in order of preference (code link on index page above bootstrapfile)*/
+ ul.nav, .jumbotron h1 {
+	font-family: 'Arvo', courier, serif;
+ }
+ 
+/*changed the font of the navigation buttons*/
+ ul.nav {
+ 	font-size: 13px
+ 	}
+ 	
+  footer {
+	background-color: #F74C3C;
+	padding-top: 150px;
+	padding-bottom: 30px;
+}
+
+#Educators {
+	font-size: 30px;
+	color:black;
+	text-transform:lowercase;
+}
+
+/*all within "Jumbotron" container, below modifications will override bootstrap*/
+.jumbotron {
+	text-align: center;
+	background-image: url('../Images/hero_image.jpg');
+	color:white;
+}
+
+.jumbotron h1 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.jumbotron p {
+	margin-bottom: 30px;
+	font-weight:100;
+	padding: 0px 50px;
+}
+
+.btn-lg {
+	font-size: 36px;
+	color: #FFF;
+	background-color: #D9534F;
+	border-color: #D43F3A;
+}
+
+.container {
+	text-align:center;
+}
+
+.btn-default {
+	color: #E74C3C;
+}
+
+.emphasis {
+	color:#E74C3C;
+	font-size:24px;
+}
+
+.homepage {
+	text-align:center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.homepage h2, .homepage h3 {
+	color:#E74C3C;
+	font-family: 'Arvo', courier, serfi;
+	text-transform:uppercase;
+}
+.homepage h2 {
+	font-size:30px;
+
+}
+
+.homepage h3 {
+	font-size: 26px;
+}
+
+.homepage hr {
+	border-top: 1px solid #E74C3D;
+	width: 160px;
+	margin-top: 15px;
+}
+
+.homepage p {
+	font-size:21px;
+	font-weight:300;
+}
+
+#get-involved {
+	background-color:#F5F5F5;
+}
+
+.footer{
+	text-align:left;
+}
+
+/*responsive sytling*/
+@media (max-width:1199px) { 
+	.jumbotron h1 {
+		font-size:56px;
+		margin-bottom:30px;
+	}
+}
+
+@media (max-width:991px) { 
+	.jumbotron h1 {
+		font-size:44px;
+	}
+	
+	.jumbotron p {
+		padding:0 10px;
+	}
+		#get-involved .col-md-4{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+
+}
+
+@media (max-width:767px) { 
+	.jumbotron h1 {
+		font-size:24px;
+	}
+	
+	.jumbotron p {
+		padding:0 10px;
+		font-size:16px;
+	}
+	
+	.btn-lg {
+		font-size:18px;
+	}
+	
+	.footer img {
+		width:89%
+	}
+	
+	.homepage p {
+		font-size: 18px;
+	}
+}
